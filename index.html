@@ -13,9 +13,8 @@
         <h1 class="col h1 text-center">News Portal</h1>
     </header>
     <div class="search-bar row text-center my-5">
-        <form class="col" onsubmit="searchNews(); return false">
-            <input class="w-75" type="text" name="search" id="search" placeholder="Search a topic">
-            <button type="submit">Search</button>
+        <form class="col" oninput="searchNews()">
+            <input class="w-75" type="text" name="search" id="search" placeholder="Search a topic" value="">
         </form>
     </div>
     <div class="card-deck row"></div>

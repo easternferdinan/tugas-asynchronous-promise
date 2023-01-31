@@ -13,7 +13,11 @@ function searchNews() {
     getSearch
         .then(result => result.json())
         .then(result => render(result))
-        .catch(error => console.log(error))
+        .catch(error => console.log(error));
+
+    if (input === "") {
+        window.location.reload();
+    }
 }
 
 function render(result) {
