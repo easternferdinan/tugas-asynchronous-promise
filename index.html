@@ -13,23 +13,12 @@
         <h1 class="col h1 text-center">News Portal</h1>
     </header>
     <div class="search-bar row text-center my-5">
-        <form class="col" onsubmit="searchNews()">
+        <form class="col" onsubmit="searchNews(); return false">
             <input class="w-75" type="text" name="search" id="search" placeholder="Search a topic">
             <button type="submit">Search</button>
         </form>
     </div>
-    <div class="news-card row">
-        <div class="card-group">
-            <div class="card">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div class="card-deck row"></div>
 
 
     <script src="./script.js"></script>
